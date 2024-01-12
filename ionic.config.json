@@ -1,0 +1,7 @@
+{
+  "name": "EcoCycler",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
