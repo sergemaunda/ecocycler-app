@@ -1,14 +1,60 @@
-<ion-content [fullscreen]="true">
-  <ion-toolbar>
+<ion-content class="page ion-padding" [fullscreen]="true">
+  <ion-toolbar class="page">
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>
       Home
     </ion-title>
   </ion-toolbar>
 
-  <div>
-    <ion-card>
+  <swiper-container class="intro-swiper-carousel" pagination="true">
+  <swiper-slide class="intro-slide">
+    <img class="intro-card-carousel" src="../../assets/svg/intro-slide1.svg">
+  </swiper-slide>
+  <swiper-slide>
+    <img class="intro-card-carousel" src="../../assets/svg/intro-slide2.svg">
+  </swiper-slide>
+  <swiper-slide>
+    <img class="intro-card-carousel" src="../../assets/svg/intro-slide3.svg">
+  </swiper-slide>
+  <swiper-slide>
+    <img class="intro-card-carousel" src="../../assets/svg/intro-slide4.svg">
+  </swiper-slide>
+  </swiper-container>
 
-    </ion-card>
-  </div>
+  <ion-card class="card-header-overview">
+    <ion-card-header class="card-header" color="primary">
+      <ion-card-title class="lbl-card-header">EcoCycler Hero</ion-card-title>
+      <ion-img class="img-card" src="../../assets/imgs/card-img.png"></ion-img>
+    </ion-card-header>
+    <ion-card-content class="card-content-overview">
+      <div class="overview-detail">
+        <ion-label color="primary">
+          <h1 class="lbl-items-number">2</h1>
+          <h6 class="lbl-items">Items<br>Recycled</h6>
+        </ion-label>
+      </div>
+      <div class="overview-detail">
+        <ion-label color="primary">
+          <h1 class="lbl-items-number">1</h1>
+          <h6 class="lbl-items">Items<br>Reused</h6>
+        </ion-label>
+      </div>
+      <div class="overview-detail">
+        <ion-label color="primary">
+          <h1 class="lbl-items-number">1</h1>
+          <h6 class="lbl-items">Items<br>Reduced</h6>
+        </ion-label>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-title>Scanned Items</ion-title>
+  <ion-card>
+    
+  </ion-card>
 
 </ion-content>

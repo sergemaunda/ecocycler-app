@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PhotoService } from '../services/photo.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(private photoService: PhotoService) {}
+
+  scanItem() {
+    this.photoService.scanNewItem();
+  }
+
 
 }

@@ -1,0 +1,77 @@
+.page {
+  --background: #E5E5E5;
+  --color: #000000;
+}
+
+.intro-card-carousel {
+  width: 100%;
+  padding: 0px 5px;
+  margin-bottom: 40px;
+  border-radius: 18px;
+  box-shadow: none;
+}
+
+.intro-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.intro-swiper-carousel {
+  --swiper-pagination-color: #086A35;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 16px;
+  align-content: center;
+}
+
+.card-header-overview {
+  box-shadow: none;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.card-content-overview {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 6px;
+}
+
+.img-card {
+  display: flex;
+  height: 45px;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-detail {
+  display: flex;
+  border-style: solid;
+  border-color: #086a35;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lbl-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.lbl-items-number {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.lbl-items {
+  font-size: 10px;
+  font-weight: bold;
+}
