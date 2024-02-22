@@ -41,6 +41,11 @@
   padding: 20px 6px;
 }
 
+.card-item-labels {
+  display: flex;
+  flex-direction: column;
+}
+
 .img-card {
   display: flex;
   height: 45px;

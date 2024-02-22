@@ -11,10 +11,11 @@ export class PhotoService {
   constructor() { }
 
   public async scanNewItem() {
-    // Take a photo
+    // scan item
     const capturedPhoto = await Camera.getPhoto({
       resultType: CameraResultType.Uri,
       source: CameraSource.Camera,
+      allowEditing: true,
       quality: 100
     });
   }
